@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "HelperTeddy",
+	"version": "1.0",
+
+	"description": 
+	"Welcome to your HelperTeddy -- \nA Brown customized Chrome extension with smart bookmarks.",
+
+	"browser_action": {
+	"default_icon": "icon.png",
+	"default_title": "HelperTeddy"
+	,"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+
+
+	"permissions": [
+		"activeTab",
+		"https://selfservice.brown.edu/*",
+		"https://sso.brown.edu/*",
+		"https://cab.brown.edu/",
+		"http://cab.brown.edu/",
+		"https://orgsync.com/*",
+		"tabs", "http://*/*", "https://*/*"
+	]
+}
